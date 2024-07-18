@@ -1,0 +1,22 @@
+﻿<Window x:Class="WPF_Q.View.UserHistory"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Q.View"
+        mc:Ignorable="d"
+        Title="User History" Height="450" Width="800">
+    <Grid Margin="10">
+        <TextBlock Text="User Test History" FontSize="20" FontWeight="Bold" Margin="0,0,0,10"/>
+        <DataGrid x:Name="dataGridUserHistory" AutoGenerateColumns="False" 
+                  AlternatingRowBackground="#E5E5E5" RowBackground="#FFFFFF" 
+                  HeadersVisibility="Column" IsReadOnly="True" Margin="0,40,0,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="50"/>
+                <DataGridTextColumn Header="Answers" Binding="{Binding Answer}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button Content="Back" Width="100" Height="30" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10" Click="Back_Click"/>
+    </Grid>
+</Window>

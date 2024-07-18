@@ -1,0 +1,18 @@
+﻿<Window x:Class="WPF_Q.View.UserTakeTest"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Q.View"
+        mc:Ignorable="d"
+        Title="UserTakeTest" Height="700" Width="1244">
+    <Grid Margin="10">
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel x:Name="QuestionsPanel">
+                <!-- Questions will be dynamically added here -->
+            </StackPanel>
+        </ScrollViewer>
+        <Button Content="Submit Test" Width="150" Height="40" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="200,10,0,0" Click="SubmitTest_Click"/>
+        <Button Content="Back" Width="150" Height="40" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,10,200,0" Click="Back_Click"/>
+    </Grid>
+</Window>
